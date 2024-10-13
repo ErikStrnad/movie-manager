@@ -23,6 +23,7 @@ public class Movie extends PanacheEntityBase {
     private String description;
 
     @ElementCollection
+    @CollectionTable(name = "movie_pictures", joinColumns = @JoinColumn(name = "imdbID"))
     private List<String> pictures;
 
     public Movie() {
