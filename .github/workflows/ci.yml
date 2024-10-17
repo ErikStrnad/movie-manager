@@ -25,3 +25,7 @@ jobs:
 
       - name: Build with Maven Wrapper
         run: ./mvnw clean install
+
+      - name: Run Tests
+        run: ./mvnw test
+
